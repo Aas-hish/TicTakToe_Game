@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FDDBD3D3"
+    tools:context=".MainActivity"
+    tools:ignore="Hardcoded">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="110dp"
+        android:textColor="@color/black"
+        android:fontFamily="@font/aladin"
+        android:text="TIC"
+        android:textSize="60sp"
+        android:textStyle="bold" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textColor="@color/black"
+        android:fontFamily="@font/aladin"
+        android:text="TAC-TOE"
+        android:textSize="60sp"
+        android:textStyle="bold" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        app:cardCornerRadius="20dp"
+        android:elevation="500dp"
+
+        android:layout_marginTop="50dp">
+
+        <LinearLayout
+            android:background="@color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+            <GridLayout
+                android:padding="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:columnCount="3"
+                android:rowCount="3">
+
+
+                <Button
+                    android:id="@+id/b1"
+                    android:layout_marginBottom="5dp"
+                    android:onClick="check" />
+
+                <Button
+                    android:id="@+id/b2"
+                    android:layout_marginLeft="10dp"
+                    android:onClick="check" />
+
+                <Button
+                    android:id="@+id/b3"
+                    android:layout_marginLeft="10dp"
+                    android:onClick="check" />
+
+                <Button
+                    android:id="@+id/b4"
+                    android:layout_marginBottom="5dp"
+                    android:onClick="check" />
+
+                <Button
+                    android:id="@+id/b5"
+                    android:layout_marginLeft="10dp"
+                    android:onClick="check" />
+
+                <Button
+                    android:id="@+id/b6"
+                    android:layout_marginLeft="10dp"
+                    android:onClick="check" />
+
+                <Button
+                    android:id="@+id/b7"
+                    android:layout_marginBottom="5dp"
+                    android:onClick="check" />
+
+                <Button
+                    android:id="@+id/b8"
+                    android:layout_marginLeft="10dp"
+                    android:onClick="check" />
+
+                <Button
+                    android:id="@+id/b9"
+                    android:layout_marginLeft="10dp"
+                    android:onClick="check" />
+            </GridLayout>
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <Button
+        android:id="@+id/newgame"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="New Game"
+        android:textColor="@color/white"
+        android:layout_marginTop="50dp"/>
+
+</LinearLayout>
